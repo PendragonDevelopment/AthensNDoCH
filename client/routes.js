@@ -5,6 +5,7 @@ import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Schedule from './pages/Schedule';
+import AdminLogin from './pages/AdminLogin';
 import Perf from 'react-addons-perf';
 
 if (process.env.NODE_ENV === 'development') {
@@ -34,4 +35,15 @@ navigationRoutes.route('/schedule', {
   action() {
     mount(MainLayout, { content: () => <Schedule /> });
   },
+});
+
+var privateRoutes = FlowRouter.group({
+  name: 'private'
+});
+
+privateRoutes.route('/login', {
+  name: 'login',
+  action() {
+    mount(MainLayout, { content: () => <AdminLogin />});
+  }
 });
