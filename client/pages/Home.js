@@ -16,7 +16,7 @@ export default Home = (props) => {
             </div>
           </div>
         </header>
-        <section id="projects">
+        <section id="projects" className="bg-primary">
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-lg-offset-2 text-center">
