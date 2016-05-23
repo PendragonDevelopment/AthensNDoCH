@@ -12,17 +12,6 @@ export default MainLayout = ({ content }) => {
         <Provider store={store}>
           {content()}
         </Provider>
-        <section id="projects">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-8 col-lg-offset-2 text-center">
-                        <h2>Projects</h2>
-                        <hr className="light" />
-                        <p>Project Information</p>
-                    </div>
-                </div>
-            </div>
-        </section>
       </div>
 }
 

@@ -17,7 +17,7 @@ export default class MainNavigation extends Component {
                         {
                             navigationRoutes.map(route => {
                                 return <li key={route.name}>
-                                    <a href={route.path} className={ route.name === currentRoute ? 'active page-scroll' : 'page-scroll' }>
+                                    <a href={'#' + route.name} className={ route.name === currentRoute ? 'active page-scroll' : 'page-scroll' }>
                                         {route.name}
                                     </a></li>
                             })
