@@ -4,18 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import fitText from './jquery.fittext';
-import scrollspy from '../../node_modules/scrollspy/jquery.scrollspy';
+import './jquery.fittext';
+import '../../node_modules/scrollspy/jquery.scrollspy';
 import {affix} from '../../node_modules/bootstrap/dist/js/bootstrap.min';
-//import * as WOW from '../../node_modules/wowjs/dist/wow.min';
-
-$('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: ($($anchor.attr('href')).offset().top - 50)
-    }, 1250, 'easeInOutExpo');
-    event.preventDefault();
-});
+import '../../node_modules/wowjs/dist/wow.min';
+import './jquery.easing.min';
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -44,4 +37,4 @@ $('#mainNav').affix({
 });
 
 // Initialize WOW.js Scrolling Animations
-//new WOW().init();
+new WOW().init();

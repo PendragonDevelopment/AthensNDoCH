@@ -2,6 +2,15 @@ import React, {Component, PropTypes} from 'react';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 export default class MainNavigation extends Component {
+    componentDidMount() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            }, 1250, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    }
     render() {
         var navigationRoutes = _.filter(FlowRouter._routes, (route) => {
             return route.group.name === "nav"
@@ -11,7 +20,7 @@ export default class MainNavigation extends Component {
 
         return <nav id="mainNav" className="navbar navbar-default navbar-fixed-top">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">Athens NDoCH</a>
+                <a className="navbar-brand" href="#home">Athens NDoCH</a>
                 <div className="">
                     <ul className="nav navbar-nav navbar-right" id="nav-collapse">
                         {
