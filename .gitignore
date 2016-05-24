@@ -1,0 +1,7 @@
+# The usual suspects
+node_modules
+npm-debug.log
+
+# WebStorm
+.idea
+server/server-startup.js
