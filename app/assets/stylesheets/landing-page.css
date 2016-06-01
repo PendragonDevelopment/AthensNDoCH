@@ -35,14 +35,16 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/intro-bg.jpg) no-repeat center center;
+    background: url(/assets/dt-athens.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    margin: 10% 0;
+    padding: 10% 0;
+    background: rgba(0,0,0,.75);
+    border-radius:5px;
 }
 
 .intro-message > h1 {
@@ -116,8 +118,14 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/banner-bg.jpg) no-repeat center center;
+    background: url(/assets/theater.jpg) no-repeat center center;
     background-size: cover;
+}
+
+.banner .row {
+    background: rgba(0,0,0,.75);
+    border-radius:5px;
+    padding: 5em 2em;
 }
 
 .banner h2 {
