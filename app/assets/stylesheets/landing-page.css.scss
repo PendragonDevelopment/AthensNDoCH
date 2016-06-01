@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/assets/dt-athens.jpg) no-repeat center center;
+    background: asset-url("dt-athens.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -118,7 +118,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(/assets/theater.jpg) no-repeat center center;
+    background: asset-url("theater.jpg") no-repeat center center;
     background-size: cover;
 }
 
