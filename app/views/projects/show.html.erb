@@ -10,7 +10,7 @@
 
       <p>
         <strong>Description:</strong>
-        <%= @project.description %>
+        <%= markdown(@project.description) %>
       </p>
 
       <%= link_to 'Edit', edit_project_path(@project) %> |
